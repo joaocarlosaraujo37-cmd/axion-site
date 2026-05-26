@@ -1,4 +1,4 @@
-﻿# Axion Engenharia - Site Estático
+# Axion Automação Industrial - Site Estático
 
 Site institucional estático pronto para publicação na Vercel.
 
@@ -14,6 +14,6 @@ Site institucional estático pronto para publicação na Vercel.
 ## Contato configurado
 
 - WhatsApp: (11) 98977-4997
-- E-mail: joao.araujo@axionengenharia.ind.br
-- Instagram: @axionengenhariaindustrial
+- E-mail: joao.araujo@axionautomacao.ind.br
+- Instagram: @axionautomacaoindustrial
 - Endereço: Av. Dom Pedro II, 505 - Atibaia/SP
