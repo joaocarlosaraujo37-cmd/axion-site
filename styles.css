@@ -378,6 +378,30 @@ p {
   padding: 26px;
 }
 
+.service-highlight {
+  display: flex;
+  min-height: 100%;
+}
+
+.service-highlight div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  background:
+    linear-gradient(135deg, rgba(11, 92, 255, 0.2), rgba(247, 181, 0, 0.08)),
+    rgba(6, 16, 31, 0.96);
+}
+
+.inline-link {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 8px;
+  border-bottom: 1px solid rgba(43, 117, 255, 0.72);
+  color: #dbe7ff;
+  font-weight: 800;
+}
+
 .contracts {
   background:
     linear-gradient(180deg, rgba(11, 92, 255, 0.08), rgba(6, 16, 31, 0.2)),
@@ -388,6 +412,75 @@ p {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+}
+
+.contract-lead {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.contract-lead > div {
+  min-height: 190px;
+  border: 1px solid rgba(43, 117, 255, 0.34);
+  border-radius: 8px;
+  padding: 26px;
+  background: linear-gradient(180deg, rgba(11, 92, 255, 0.13), rgba(7, 14, 26, 0.96));
+}
+
+.contract-lead span {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.contract-system {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 18px;
+  margin: 18px 0;
+}
+
+.contract-system-copy,
+.contract-steps article,
+.support-options article,
+.support-form {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(15, 26, 39, 0.96), rgba(7, 14, 26, 0.96));
+}
+
+.contract-system-copy {
+  padding: 30px;
+}
+
+.contract-steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.contract-steps article {
+  min-height: 210px;
+  padding: 24px;
+}
+
+.contract-steps span {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--blue-2);
+  font-size: 12px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.contract-steps h4 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .plan-card {
@@ -479,6 +572,75 @@ p {
 .contract-note .primary-button {
   justify-self: start;
   margin-top: 4px;
+}
+
+.support-portal {
+  background: linear-gradient(180deg, rgba(11, 23, 40, 0.48), rgba(6, 16, 31, 0.2));
+}
+
+.support-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(340px, 1.08fr);
+  gap: 34px;
+  align-items: start;
+}
+
+.support-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.support-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.support-options article {
+  padding: 24px;
+}
+
+.support-form {
+  display: grid;
+  gap: 14px;
+  padding: 30px;
+}
+
+.support-form label {
+  display: grid;
+  gap: 8px;
+  color: #d7dde8;
+  font-weight: 800;
+}
+
+.support-form input,
+.support-form select,
+.support-form textarea {
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 8px;
+  padding: 13px 14px;
+  background: rgba(255, 255, 255, 0.055);
+  color: var(--text);
+  font: inherit;
+}
+
+.support-form textarea {
+  min-height: 122px;
+  resize: vertical;
+}
+
+.support-form select option {
+  color: #06101f;
+}
+
+.form-note {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .two-column {
@@ -734,9 +896,11 @@ p {
   .hero-content.split,
   .hero-strip,
   .two-column,
+  .contract-system,
   .nr12,
   .about,
   .contact,
+  .support-layout,
   .problem-layout {
     grid-template-columns: 1fr;
   }
@@ -754,6 +918,9 @@ p {
   .case-grid,
   .differential-grid,
   .plan-grid,
+  .contract-lead,
+  .contract-steps,
+  .support-options,
   .contract-details {
     grid-template-columns: 1fr;
   }
@@ -815,6 +982,9 @@ p {
   .contact-copy,
   .nr12-panel,
   .plan-card,
+  .contract-system-copy,
+  .contract-steps article,
+  .support-form,
   .contract-details > div,
   .contract-note {
     padding: 26px;
